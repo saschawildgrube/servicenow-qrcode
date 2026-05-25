@@ -48,9 +48,9 @@
             <sys_id>8ecc7402934943900385f7519803d63b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_snc_qrcode_qrcode</sys_name>
-            <sys_package display_value="QRCode WORK IN PROGRESS" source="x_snc_qrcode">2b198c06930143900385f7519803d6bb</sys_package>
+            <sys_package display_value="QRCode" source="x_snc_qrcode">2b198c06930143900385f7519803d6bb</sys_package>
             <sys_policy/>
-            <sys_scope display_value="QRCode WORK IN PROGRESS">2b198c06930143900385f7519803d6bb</sys_scope>
+            <sys_scope display_value="QRCode">2b198c06930143900385f7519803d6bb</sys_scope>
             <sys_update_name>sys_ui_list_x_snc_qrcode_qrcode_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-05-25 15:48:29</sys_updated_on>

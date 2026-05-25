@@ -11,14 +11,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-25 12:09:47</sys_created_on>
         <sys_id>96ba4c4a930143900385f7519803d61f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>x_snc_qrcode.active</sys_name>
-        <sys_package display_value="QRCode WORK IN PROGRESS" source="x_snc_qrcode">2b198c06930143900385f7519803d6bb</sys_package>
+        <sys_package display_value="QRCode" source="x_snc_qrcode">2b198c06930143900385f7519803d6bb</sys_package>
         <sys_policy/>
-        <sys_scope display_value="QRCode WORK IN PROGRESS">2b198c06930143900385f7519803d6bb</sys_scope>
+        <sys_scope display_value="QRCode">2b198c06930143900385f7519803d6bb</sys_scope>
         <sys_update_name>sys_properties_96ba4c4a930143900385f7519803d61f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-25 12:09:47</sys_updated_on>
+        <sys_updated_on>2026-05-25 16:06:12</sys_updated_on>
         <type>boolean</type>
         <value>true</value>
         <write_roles/>

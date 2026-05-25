@@ -52,14 +52,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-25 13:24:29</sys_created_on>
         <sys_id>c29bdc0a93c143900385f7519803d6a3</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>HtmlRenderPageQRCodeView</sys_name>
-        <sys_package display_value="QRCode WORK IN PROGRESS" source="x_snc_qrcode">2b198c06930143900385f7519803d6bb</sys_package>
-        <sys_policy>read</sys_policy>
-        <sys_scope display_value="QRCode WORK IN PROGRESS">2b198c06930143900385f7519803d6bb</sys_scope>
+        <sys_package display_value="QRCode" source="x_snc_qrcode">2b198c06930143900385f7519803d6bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="QRCode">2b198c06930143900385f7519803d6bb</sys_scope>
         <sys_update_name>sys_script_include_c29bdc0a93c143900385f7519803d6a3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-25 16:10:21</sys_updated_on>
+        <sys_updated_on>2026-05-25 16:19:00</sys_updated_on>
         <x_snc_devtools_sys_ui_script/>
     </sys_script_include>
 </record_update>
