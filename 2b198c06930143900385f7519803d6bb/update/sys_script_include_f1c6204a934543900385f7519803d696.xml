@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_qrcode.HtmlRenderPrintableQRCodesA4</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Renders 4x3 printable QR Codes for an A4 page.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>HtmlRenderPrintableQRCodesA4</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[function HtmlRenderPrintableQRCodesA4(strPayload)
+{
+    var HtmlRenderQRCode = x_snc_devtools.HtmlRenderQRCode;
+    var HtmlRenderPageA4 = x_snc_devtools.HtmlRenderPageA4;
+
+    var strHtml = '';
+    var strGrid = '';
+
+    var nCols = 3;
+    var nRows = 4;
+
+    var strSingleQR = HtmlRenderQRCode(strPayload, 5, 'cm');
+
+    var strBorder = '0.3mm dashed #aaa';
+
+    var aTableStyles = [
+        'width:19cm',
+        'border-collapse:collapse',
+        'margin:0 auto',
+        'table-layout:fixed'
+    ];
+    var strTableStyle = aTableStyles.join(';');
+
+    var aCellStyles = [
+        'width:6.33cm',
+        'height:6.33cm',
+        'box-sizing:border-box',
+        'text-align:center',
+        'vertical-align:middle',
+        'padding:1mm',
+        'border:' + strBorder
+    ];
+    var strCellStyle = aCellStyles.join(';');
+
+    // Wrap QR in a centering div — handles both block and inline QR output
+    var aWrapStyles = [
+        'display:table',
+        'margin:0 auto'
+    ];
+    var strWrapStyle = aWrapStyles.join(';');
+
+    var strWrappedQR = '<div style="' + strWrapStyle + '">' + strSingleQR + '</div>';
+
+    strGrid += '<table style="' + strTableStyle + '">';
+    for (var row = 0; row < nRows; row++)
+    {
+        strGrid += '<tr>';
+        for (var col = 0; col < nCols; col++)
+        {
+            strGrid += '<td style="' + strCellStyle + '">';
+            strGrid += strWrappedQR;
+            strGrid += '</td>';
+        }
+        strGrid += '</tr>';
+    }
+    strGrid += '</table>';
+
+    strHtml = strGrid;
+    strHtml = HtmlRenderPageA4(strHtml, 1, 1);
+
+    return strHtml;
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 14:13:13</sys_created_on>
+        <sys_id>f1c6204a934543900385f7519803d696</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>HtmlRenderPrintableQRCodesA4</sys_name>
+        <sys_package display_value="QRCode" source="x_snc_qrcode">2b198c06930143900385f7519803d6bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="QRCode">2b198c06930143900385f7519803d6bb</sys_scope>
+        <sys_update_name>sys_script_include_f1c6204a934543900385f7519803d696</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 16:19:00</sys_updated_on>
+        <x_snc_devtools_sys_ui_script/>
+    </sys_script_include>
+</record_update>

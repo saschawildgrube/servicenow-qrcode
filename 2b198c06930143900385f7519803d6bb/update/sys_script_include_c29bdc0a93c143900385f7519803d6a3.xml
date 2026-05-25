@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_qrcode.HtmlRenderPageQRCodeView</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Renders the UI Page which displays the QR Code.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>HtmlRenderPageQRCodeView</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[function HtmlRenderPageQRCodeView()
+{
+	var GetParam = x_snc_devtools.GetParam;
+	var IsValidSysId = x_snc_devtools.IsValidSysId;
+	var GetRecord = x_snc_devtools.GetRecord;
+	var IsValidRecord = x_snc_devtools.IsValidRecord;
+	var GetStringValue = x_snc_devtools.GetStringValue;
+	var HtmlRenderError = x_snc_devtools.HtmlRenderError;
+	var HtmlRenderQRCode = x_snc_devtools.HtmlRenderQRCode;
+
+	if (IsActive() == false)
+	{
+		return HtmlRenderError('QR Code is inactive.');
+	}
+
+	var strPayload = GetParam('payload');
+
+	if (strPayload == '')
+	{
+		var strSysId = GetParam('sys_id',IsValidSysId);
+		if (IsValidSysId(strSysId) == true)
+		{
+			var grQRCode = GetRecord('x_snc_qrcode_qrcode',strSysId);
+			if (IsValidRecord(grQRCode) == true)
+			{
+				strPayload = GetStringValue(grQRCode.payload);
+			}
+		}
+	}
+
+	if (strPayload == '')
+	{
+		return	HtmlRenderError('No payload specified');
+	}
+
+	var strHtml = '';
+	strHtml += HtmlRenderQRCode(strPayload,14,'cm');
+	return strHtml;
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 13:24:29</sys_created_on>
+        <sys_id>c29bdc0a93c143900385f7519803d6a3</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>HtmlRenderPageQRCodeView</sys_name>
+        <sys_package display_value="QRCode" source="x_snc_qrcode">2b198c06930143900385f7519803d6bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="QRCode">2b198c06930143900385f7519803d6bb</sys_scope>
+        <sys_update_name>sys_script_include_c29bdc0a93c143900385f7519803d6a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 16:19:00</sys_updated_on>
+        <x_snc_devtools_sys_ui_script/>
+    </sys_script_include>
+</record_update>

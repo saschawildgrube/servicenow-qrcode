@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d080acc6930543900385f7519803d6e4" label="QR Code" max_length="40" name="x_snc_qrcode_qrcode" type="collection">
+        <element label="Payload" mandatory="true" max_length="1000" name="payload" type="string"/>
+        <element display="true" label="Name" mandatory="true" max_length="80" name="name" type="string"/>
+    </element>
+</database>
