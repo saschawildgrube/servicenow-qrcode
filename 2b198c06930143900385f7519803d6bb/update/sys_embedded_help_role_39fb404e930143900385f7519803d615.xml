@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_snc_qrcode.admin" name="x_snc_qrcode.admin">adebcc0e930143900385f7519803d68d</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 12:15:13</sys_created_on>
+        <sys_id>39fb404e930143900385f7519803d615</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>adebcc0e930143900385f7519803d68d</sys_name>
+        <sys_package display_value="QRCode WORK IN PROGRESS" source="x_snc_qrcode">2b198c06930143900385f7519803d6bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="QRCode WORK IN PROGRESS">2b198c06930143900385f7519803d6bb</sys_scope>
+        <sys_update_name>sys_embedded_help_role_39fb404e930143900385f7519803d615</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 12:15:13</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
