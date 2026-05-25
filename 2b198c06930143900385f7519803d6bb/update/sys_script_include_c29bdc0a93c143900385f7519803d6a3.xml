@@ -12,10 +12,27 @@
         <script><![CDATA[function HtmlRenderPageQRCodeView()
 {
 	var GetParam = x_snc_devtools.GetParam;
+	var IsValidSysId = x_snc_devtools.IsValidSysId;
+	var GetRecord = x_snc_devtools.GetRecord;
+	var IsValidRecord = x_snc_devtools.IsValidRecord;
+	var GetStringValue = x_snc_devtools.GetStringValue;
 	var HtmlRenderError = x_snc_devtools.HtmlRenderError;
 	var HtmlRenderQRCode = x_snc_devtools.HtmlRenderQRCode;
 	
 	var strPayload = GetParam('payload');
+
+	if (strPayload == '')
+	{
+		var strSysId = GetParam('sys_id',IsValidSysId);
+		if (IsValidSysId(strSysId) == true)
+		{
+			var grQRCode = GetRecord('x_snc_qrcode_qrcode',strSysId);
+			if (IsValidRecord(grQRCode) == true)
+			{
+				strPayload = GetStringValue(grQRCode.payload);
+			}
+		}
+	}
 
 	var strHtml = '';
 	if (strPayload == '')
@@ -34,14 +51,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-25 13:24:29</sys_created_on>
         <sys_id>c29bdc0a93c143900385f7519803d6a3</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>HtmlRenderPageQRCodeView</sys_name>
         <sys_package display_value="QRCode WORK IN PROGRESS" source="x_snc_qrcode">2b198c06930143900385f7519803d6bb</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="QRCode WORK IN PROGRESS">2b198c06930143900385f7519803d6bb</sys_scope>
         <sys_update_name>sys_script_include_c29bdc0a93c143900385f7519803d6a3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-25 13:31:02</sys_updated_on>
+        <sys_updated_on>2026-05-25 13:59:53</sys_updated_on>
         <x_snc_devtools_sys_ui_script/>
     </sys_script_include>
 </record_update>
