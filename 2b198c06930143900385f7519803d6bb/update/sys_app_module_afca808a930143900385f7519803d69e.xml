@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="QRCode">17ca408a930143900385f7519803d6ef</application>
+        <assessment/>
+        <device_type/>
+        <filter table="syslog_app_scope">sys_created_onONLast 30 minutes@javascript:gs.beginningOfLast30Minutes()@javascript:gs.endOfLast30Minutes()^sys_scope=2b198c06930143900385f7519803d6bb<item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Last 30 minutes@javascript:gs.beginningOfLast30Minutes()@javascript:gs.endOfLast30Minutes()"/>
+            <item display_table="sys_scope" display_value="QRCode WORK IN PROGRESS" endquery="false" field="sys_scope" goto="false" newquery="false" operator="=" or="false" value="2b198c06930143900385f7519803d6bb"/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Log</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>syslog_app_scope</name>
+        <order>400</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>&amp;sysparm_view_forced=true&amp;sysparm_order=sequence&amp;sysparm_order_direction=desc</query>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 12:10:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>afca808a930143900385f7519803d69e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Log</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="QRCode WORK IN PROGRESS" source="x_snc_qrcode">2b198c06930143900385f7519803d6bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="QRCode WORK IN PROGRESS">2b198c06930143900385f7519803d6bb</sys_scope>
+        <sys_update_name>sys_app_module_afca808a930143900385f7519803d69e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 12:10:08</sys_updated_on>
+        <timeline_page/>
+        <title>Log</title>
+        <uncancelable>false</uncancelable>
+        <view_name>DevTools</view_name>
+        <window_name/>
+    </sys_app_module>
+</record_update>
